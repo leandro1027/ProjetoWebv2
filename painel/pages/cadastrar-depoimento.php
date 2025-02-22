@@ -18,7 +18,7 @@
         </div>
         <!--form group-->
         <div class="form-group">
-            <label for="depoimento">Depoimento: </label>
+            <label for="depoimento">Descrição: </label>
             <textarea class="tinymce" name="depoimento" id=""><?php recoverPost('depoimento');?></textarea>
         </div>
         <!--form group-->
