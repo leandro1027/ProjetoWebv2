@@ -37,9 +37,9 @@ $infoSite = $infoSite->fetch();
     <title><?php echo $infoSite['titulo']; ?></title>
 
     <!--favicon-->
-    <link rel="shortcut icon" href="<?php echo INCLUDE_PATH; ?>favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo INCLUDE_PATH; ?>logoGamer.avif" type="image/x-icon">
 
-    <title>IFPR</title>
+    <title>Games</title>
 </head>
 
 <body>
@@ -72,8 +72,8 @@ $infoSite = $infoSite->fetch();
                 <ul>
                     <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>noticias">Notícias</a></li>
-                    <li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
-                    <li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Lançamentos</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>servicos">Competições</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>painel"><i class="fa-solid fa-user"></i></a></li>
                 </ul>

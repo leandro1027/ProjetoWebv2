@@ -1,14 +1,14 @@
 
 <div class="box-content">
-    <h2><i class="fas fa-plus"></i> Adicionar Depoimento</h2>
+    <h2><i class="fas fa-plus"></i> Adicionar um lançamento</h2>
 
     <form method="post" enctype="multipart/form-data">
         <?php 
         if (isset($_POST['acao'])){
             if(Painel::insert($_POST)){
-            Painel::messageToUser('sucesso', 'Depoimento cadastrado com sucesso!');
+            Painel::messageToUser('sucesso', 'Lançamento cadastrado com sucesso!');
             }else{
-                Painel::messageToUser('erro', 'Não foi possível cadastrar o depoimento');
+                Painel::messageToUser('erro', 'Não foi possível cadastrar o lançamento');
             }
         }
         ?>

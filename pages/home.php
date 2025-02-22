@@ -17,7 +17,7 @@ $slides = $slides->fetchAll();
     <!--Overlay-->
     <div class="center">
         <form action="">
-            <h2>Digite seu melhor Email!</h2>
+            <h2>Digite seu Email para receber as novidades do mundo dos games!</h2>
             <input type="email" name="email" id="email" required>
             <input type="submit" name="enviar" value="Enviar">
         </form>
@@ -48,7 +48,7 @@ $slides = $slides->fetchAll();
 <!--especialidades-->
 <section class="especialidades">
     <div class="center">
-        <h2 class="title">Especialidades</h2>
+        <h2 class="title">Aqui você encontra</h2>
         <div class="w33 left box-especialidades">
             <h3><i class="<?php echo $infoSite['icone1']?>"></i></h3>
             <p><?php echo $infoSite['descricao1']?></p>
@@ -72,7 +72,7 @@ $slides = $slides->fetchAll();
 <section class="extras">
     <div class="center">
         <div id="depoimentos" class="w50 left depoimentos-container">
-            <h2 class="title">Depoimentos</h2>
+            <h2 class="title">Ultimos lançamentos</h2>
             <?php
                 $sql = MySql::conectar()->prepare("SELECT * FROM `tb_admin.depoimentos` ORDER BY order_id DESC LIMIT 3");
                 $sql->execute();
@@ -91,7 +91,7 @@ $slides = $slides->fetchAll();
         </div>
         <!--depoimentos-->
         <div id="servicos" class="w50 left servicos-container">
-            <h2 class="title">Serviços</h2>
+            <h2 class="title">Ultimas Competições</h2>
             <div class="servicos">
                 <?php
                     $sql = MySql::conectar()->prepare("SELECT * FROM `tb_admin.servicos` ORDER BY order_id DESC LIMIT 3");
