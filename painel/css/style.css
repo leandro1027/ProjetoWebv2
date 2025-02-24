@@ -170,6 +170,7 @@ div.box-usuario {
 .nome-usuario {
     margin-top: 10px;
     color: white;
+    font-weight: bold;
 }
 
 .nome-usuario p {
@@ -375,65 +376,124 @@ header {
 
 /* Table listar-depoimentos */
 
-.wraper-table{
-    overflow: auto;
+/* Estilo da tabela */
+.wraper-table {
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-table{
+table {
     margin: 20px 0;
     width: 100%;
     border-collapse: collapse;
     text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
-table tr:nth-of-type(1){
-    background-color:rgb(151, 115, 187);
+table tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #ececec;
+}
+
+table tr:first-child {
+    background-color: #4A148C;
+    color: white;
     font-weight: bold;
 }
 
-table tr{
-    border-bottom: 1px solid black;
+table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
 }
 
-table td{
-    padding: 10px;
+/* Ícones de ação */
+.edit, .delete, .order-up, .order-down {
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
 }
 
-.edit{
-    color: rgb(14, 14, 139);
+.edit {
+    color: #1E88E5;
 }
 
-.delete{
-    color: rgb(185, 9, 9);
+.edit:hover {
+    color: #0D47A1;
 }
 
-.order-up{
-    color: rgb(82, 29, 167);
+.delete {
+    color: #E53935;
 }
 
-.order-down{
-    color: rgb(185, 9, 9);
+.delete:hover {
+    color: #B71C1C;
+}
+
+.order-up {
+    color: #388E3C;
+}
+
+.order-up:hover {
+    color: #1B5E20;
+}
+
+.order-down {
+    color: #FF8F00;
+}
+
+.order-down:hover {
+    color: #E65100;
 }
 
 /* Paginação */
-.paginacao{
-    margin: 10px 0;
+.paginacao {
+    margin: 20px 0;
     text-align: center;
 }
 
-.paginacao a{
-    font: 14px;
-    margin: 0 8px;
+.paginacao a {
+    font-size: 14px;
+    margin: 0 5px;
     display: inline-block;
-    padding: 4px;
-    border: 1px solid black;
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid #4A148C;
     text-decoration: none;
-    color: black;
+    color: #4A148C;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-.paginacao a.page-selected{
-    background-color: black;
+.paginacao a:hover {
+    background-color: #4A148C;
     color: white;
+}
+
+.paginacao a.page-selected {
+    background-color: #4A148C;
+    color: white;
+    border: 1px solid #4A148C;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    table td {
+        padding: 8px;
+    }
+
+    .paginacao a {
+        padding: 5px 10px;
+    }
 }
 
 .items-menu {
