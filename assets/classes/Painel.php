@@ -79,10 +79,11 @@
         public static function validImage($image){
             if($image['type'] == 'image/jpeg' ||
                 $image['type'] == 'image/jpg' ||
+                $image['type'] == 'image/webp' ||
                 $image['type'] == 'image/png'){
 
                 $size = intval($image['size']/1024);
-                if($size < 500){
+                if($size < 2000){
                     return true;
                 }else{
                     Painel::messageToUser('erro', 'O tamanho do arquivo precisa ser menor do que 500 kb');
