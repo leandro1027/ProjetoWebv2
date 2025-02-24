@@ -202,54 +202,88 @@ section.descricao-autor .center {
 
 
 
-/* Estilo da seção Especialidades */
+/* Seção Especialidades */
 section.especialidades {
     text-align: center;
     font-size: 18px;
-    padding: 50px 0;
-    background-color: #4a0080;
+    padding: 60px 5%;
+    background: linear-gradient(135deg, #4a0080, #6a1fc5);
     color: white;
 }
 
+/* Título */
 section.especialidades .title {
-    font-size: 36px;
-    margin-bottom: 30px;
+    font-size: 38px;
+    margin-bottom: 40px;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
+    position: relative;
 }
 
+/* Animação no título */
+section.especialidades .title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: white;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Estilização dos boxes */
 .box-especialidades {
     width: 30%;
     display: inline-block;
     margin: 15px;
-    padding: 20px;
+    padding: 25px;
     background: white;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Efeito hover */
 .box-especialidades:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
 }
 
+/* Ícones */
 .box-especialidades h3 i {
-    font-size: 80px;
+    font-size: 85px;
     color: #4a0080;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
-.box-especialidades h3 i:hover {
-    color: #370062;
+/* Mudança de cor no hover do ícone */
+.box-especialidades:hover h3 i {
+    color: #6a1fc5;
 }
 
+/* Texto das especialidades */
 .box-especialidades p {
-    margin-top: 10px;
-    font-size: 16px;
+    margin-top: 12px;
+    font-size: 17px;
     color: #333;
+    font-weight: 500;
 }
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .box-especialidades {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .box-especialidades {
+        width: 100%;
+        margin: 15px 0;
+    }
+}
+
 
 /* Responsividade */
 @media screen and (max-width: 768px) {
