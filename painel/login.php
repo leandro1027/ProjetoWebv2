@@ -82,7 +82,7 @@
             </form>
             <br>
             <a class="voltar" href="<?php echo INCLUDE_PATH; ?>">Página inicial?</a>
-        </div>
+        </div>  
     </body>
 
 </html>

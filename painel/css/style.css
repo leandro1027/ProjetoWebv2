@@ -13,65 +13,89 @@ body {
 }
 
 .box-login {
-    max-width: 600px;
+    max-width: 400px;
     width: 90%;
-    padding: 20px 2%;
+    padding: 25px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    box-shadow: 1px 1px 10px #333;
-}
-
-.box-login img{
-    display: block;
-    margin: 0 auto;
-    padding-bottom: 40px;
-}
-
-.box-login input[type="text"],
-.box-login input[type="password"] {
-    width: 100%;
-    height: 40px;
-    margin-top: 10px;
-    padding-left: 10px;
-    border: 2px solid black;
-}
-
-.box-login input[type="submit"] {
-    width: 100%;
-    height: 40px;
-    margin-top: 10px;
-    background-color: rgb(82, 29, 167);
-    cursor: pointer;
-    border: 2px solid black;
-}
-
-.box-login input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-}
-
-.box-login-title {
-    padding: 0 2%;
-    width: 50%;
-}
-
-.box-login-title img {
-    float: left;
-    width: 65%;
-    margin-top: 5px;
-}
-
-.box-login-title h2 {
-    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
-.box-login input[type="submit"]:hover {
-    background-color:rgb(82, 29, 167);
+/* Logo centralizada */
+.box-login img {
+    display: block;
+    margin: 0 auto 20px;
+    width: 120px;
 }
+
+/* Estilização dos inputs */
+.box-login input[type="text"],
+.box-login input[type="password"] {
+    width: 100%;
+    height: 45px;
+    margin-top: 10px;
+    padding-left: 12px;
+    border: 2px solid #5318A3;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Efeito ao clicar nos inputs */
+.box-login input[type="text"]:focus,
+.box-login input[type="password"]:focus {
+    border-color: #6A1FC5;
+    box-shadow: 0 0 8px rgba(106, 31, 197, 0.4);
+}
+
+/* Botão de submit */
+.box-login input[type="submit"] {
+    width: 100%;
+    height: 45px;
+    margin-top: 15px;
+    background-color: #5318A3;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse no botão */
+.box-login input[type="submit"]:hover {
+    background-color: #6A1FC5;
+}
+
+/* Estilização do checkbox */
+.box-login input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+/* Estilização do link de voltar */
+.box-login .voltar {
+    display: block;
+    margin-top: 10px;
+    color: #5318A3;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.box-login .voltar:hover {
+    color: #6A1FC5;
+    text-decoration: underline;
+}
+
 
 .erro-box {
     width: 100%;
