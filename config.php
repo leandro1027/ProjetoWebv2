@@ -3,7 +3,7 @@
     
     date_default_timezone_set('America/Sao_Paulo'); // Fuso horário de São Paulo
 
-    define('NOME_EMPRESA', 'IFPR'); // Nome da Empresa
+    define('NOME_EMPRESA', 'Games'); // Nome da Empresa
 
     define('INCLUDE_PATH', 'http://localhost/ProjetoWebV2/'); // Definir o domínio do site
     
